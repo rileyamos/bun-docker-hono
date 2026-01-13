@@ -7,6 +7,8 @@ Setup:
 In your respository settings add the following:
 - `DOCKERHUB_USERNAME`
 - `DOCKERHUB_TOKEN`
+
+In the dockerfile change the following:
 - Replace the `namespace/respository:latest` with your dockerhub repo, repository & tag.
 
 To install dependencies:
