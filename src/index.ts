@@ -1,14 +1,13 @@
 import { Hono } from "hono";
 
+import health from "@routes/health";
+
 const app = new Hono();
 
 app.get("/", (c) => {
   return c.text("Hello Hono!");
 });
 
-app.get("/health", (c) => {
-  c.status(200);
-  return c.text("OK");
-});
+app.route("/health", health);
 
 export default app;
